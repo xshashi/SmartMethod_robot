@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Arm Remote</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+
+  <!--- Css code --->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-image: url("background2.jpg");
+    }
+
+    .slidecontainer {
+      width: 87%;
+    }
+
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 10px;
+      background: #E9ECEF;
+      outline: none;
+      opacity: 0.8;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+
+    .slider:hover {
+      opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 10px;
+      height: 25px;
+      background: #bd72ff;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      background: #bd72ff;
+      cursor: pointer;
+    }
+
+    .content {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #2edd63;
+    }
+
+    .button1:hover {
+      background-color: #2edd63;
+      color: white;
+    }
+
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid #ff4c6a;
+    }
+
+    .button2:hover {
+      background-color: #ff4c6a;
+      color: white;
+    }
+
+    .button3 {
+      background-color: white;
+      color: black;
+      border: 2px solid #5ad6ff;
+    }
+
+    .button3:hover {
+      background-color: #5ad6ff;
+      color: white;
+    }
+   
+  </style>
+</head>
+<!--- End of the head --->
+
+<body style="background-color:black;">
+
+  <div class="content">
+    <center>
+      <b> <h1 style="color: rgb(0, 0, 0)">Arm Slider</h1></b>
+      <p style="color: rgb(0, 0, 0)" text-align: center;>Move the slider to adjust the arm</p>
+    </center>
+
+    
+    <form>
+      <fieldset>
+        <b>
+        <!-- Arm 1-->
+        <div class="slidecontainer">
+
+          <p style="color: rgb(0, 0, 0)">Arm <span style="color: #94005b">(1)</span> Value: <span id="demo1"></span></p>
+          <input type="range" min="0" max="180" value="0" class="slider" id="myRange1">
+        </div>
+
+        <script>
+          var slider = document.getElementById("myRange1");
+          var output = document.getElementById("demo1");
+          output.innerHTML = slider.value;
+
+          slider.oninput = function () {
+            output.innerHTML = this.value;
+          }
+        </script>
+
+        <br> <br>
+        <!-- Arm 2-->
+        <div class="slidecontainer">
+
+          <p style="color: rgb(0, 0, 0)">Arm <span style="color: #94005b">(2)</span> Value: <span id="demo2"></span></p>
+          <input type="range" min="0" max="180" value="0" class="slider" id="myRange2">
+        </div>
+
+        <script>
+          var slider1 = document.getElementById("myRange2");
+          var output1 = document.getElementById("demo2");
+          output1.innerHTML = slider.value;
+
+          slider1.oninput = function () {
+            output1.innerHTML = this.value;
+          }
+        </script>
+
+        <br> <br>
+        <!-- Arm 3-->
+        <div class="slidecontainer">
+
+          <p style="color: rgb(0, 0, 0)">Arm <span style="color: #94005b">(3)</span> Value: <span id="demo3"></span></p>
+          <input type="range" min="0" max="180" value="0" class="slider" id="myRange3">
+        </div>
+
+        <script>
+          var slider3 = document.getElementById("myRange3");
+          var output3 = document.getElementById("demo3");
+          output3.innerHTML = slider.value;
+
+          slider3.oninput = function () {
+            output3.innerHTML = this.value;
+          }
+        </script>
+
+        <br> <br>
+        <!-- Arm 4-->
+        <div class="slidecontainer">
+
+          <p style="color: rgb(0, 0, 0)">Arm <span style="color: #94005b">(4)</span> Value: <span id="demo4"></span></p>
+          <input type="range" min="0" max="180" value="0" class="slider" id="myRange4">
+        </div>
+
+        <script>
+          var slider4 = document.getElementById("myRange4");
+          var output4 = document.getElementById("demo4");
+          output4.innerHTML = slider.value;
+
+          slider4.oninput = function () {
+            output4.innerHTML = this.value;
+          }
+        </script>
+
+        <br> <br>
+        <!-- Arm 5-->
+        <div class="slidecontainer">
+
+          <p style="color: rgb(0, 0, 0)">Arm <span style="color: #94005b">(5)</span> Value: <span id="demo5"></span></p>
+          <input type="range" min="0" max="180" value="0" class="slider" id="myRange5">
+        </div>
+
+        <script>
+          var slider5 = document.getElementById("myRange5");
+          var output5 = document.getElementById("demo5");
+          output5.innerHTML = slider.value;
+
+          slider5.oninput = function () {
+            output5.innerHTML = this.value;
+          }
+        </script>
+
+        <br> <br>
+        <!-- Arm 6-->
+        <div class="slidecontainer">
+
+          <p style="color: rgb(0, 0, 0)">Arm <span style="color: #94005b">(6)</span> Value: <span id="demo6"></span></p>
+          <input type="range" min="0" max="180" value="0" class="slider" id="myRange6">
+        </div>
+
+        <script>
+          var slider6 = document.getElementById("myRange6");
+          var output6 = document.getElementById("demo6");
+          output6.innerHTML = slider.value;
+
+          slider6.oninput = function () {
+            output6.innerHTML = this.value;
+          }
+        </script>
+</b>
+        <br> <br>
+      </fieldset>
+      <!-- buttons -->
+      <center>
+        <button class="button button1">ON</button>
+        <button class="button button2">OFF</button>
+        <button class="button button3">Save</button>
+      </center>
+
+      </fieldset>
+    </form>
+
+  </div>
+
+</body>
+
+</html>
